@@ -15,6 +15,7 @@
 		<jvm.args.gc.log.path>-Xloggc:logs/gc.log</jvm.args.gc.log.path>
 	</properties>
 
+	
 	<profiles>
 		<profile>
 			<id>JDK-Switch</id>
