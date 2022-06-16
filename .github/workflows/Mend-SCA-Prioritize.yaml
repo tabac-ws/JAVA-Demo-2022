@@ -1,9 +1,9 @@
 name: Mend SCA Prioritize
 on:
   push:
-    branches: [ main ]
+    branches: [ mend-sca-prioritize ]
   pull_request:
-    branches: [ main* ]
+    branches: [ mend-sca-prioritize ]
 
 jobs:
   build:
