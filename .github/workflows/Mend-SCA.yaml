@@ -1,9 +1,9 @@
 name: Mend SCA
 on:
   push:
-    branches: [ main ]
+    branches: [ mend-sca-qualitygate ]
   pull_request:
-    branches: [ main* ]
+    branches: [ mend-sca-qualitygate ]
 
 jobs:
   build:
@@ -29,6 +29,7 @@ jobs:
         WS_MAVEN_RESOLVEDEPENDENCIES: true
         WS_FILESYSTEMSCAN: true
         WS_GENERATEPROJECTDETAILSJSON: true
+        WS_CHECKPOLICIES: true
       run: |
         curl -LJO https://unified-agent.s3.amazonaws.com/wss-unified-agent.jar
         echo Unified Agent downloaded successfully
