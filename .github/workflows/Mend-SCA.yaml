@@ -1,9 +1,9 @@
 name: Mend SCA
 on:
   push:
-    branches: [ main ]
+    branches: [ mend-sca ]
   pull_request:
-    branches: [ main* ]
+    branches: [ mend-sca ]
 
 jobs:
   build:
